@@ -8,7 +8,8 @@ variable "name_prefix" {
 }
 
 variable "tags" {
-  type = map(string)
+  default = {}
+  type    = map(string)
 
   description = <<-EOT
 		Tags
