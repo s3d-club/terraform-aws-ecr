@@ -7,9 +7,10 @@ module "name" {
 }
 
 resource "aws_ecr_repository" "this" {
-  name         = module.name.prefix
-  tags         = module.name.tags
-  force_delete = true
+  force_delete         = true
+  image_tag_mutability = "IMMUTABLE"
+  name                 = module.name.prefix
+  tags                 = module.name.tags
 
   image_scanning_configuration {
     scan_on_push = true

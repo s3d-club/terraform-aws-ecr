@@ -1,4 +1,4 @@
-# S3D Init
+# AWS ECR Terraform Module
 Terraform Project for AWS ECR
 
 ## Other Documents
