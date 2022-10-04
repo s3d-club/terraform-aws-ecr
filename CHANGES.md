@@ -12,3 +12,7 @@ Recently completed and planned work is tracked here.
 - Changed to set `image_tag_mutability` as `IMMUTABLE`
 - Updated `README.md`
 - Updated `hashicorp/aws` provider
+
+## [0.1.3](.)
+- Resolved `tfsec` warnings
+- Updated `name` module for better error handling
