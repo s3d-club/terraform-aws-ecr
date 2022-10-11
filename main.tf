@@ -1,5 +1,5 @@
 module "name" {
-  source = "github.com/s3d-club/terraform-external-name?ref=v0.1.5"
+  source = "github.com/s3d-club/terraform-external-name?ref=v0.1.6"
 
   keepers = { kms_key_arn = var.kms_key_arn, v = "1" }
   context = var.name_prefix
