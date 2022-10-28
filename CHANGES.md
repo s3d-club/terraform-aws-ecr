@@ -9,3 +9,7 @@ Recently completed and planned work is tracked here.
 
 ## [0.1.13](.)
 - Updated `name` module
+
+## [0.1.14](.)
+- Updated `aws` provider
+- Updated `.terraform.lock.hcl` and `terraform.tf`
