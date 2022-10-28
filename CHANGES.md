@@ -6,3 +6,6 @@ Recently completed and planned work is tracked here.
 
 ## [0.1.10](.)
 - Added `aws_ecr_repository` output
+
+## [0.1.11](.)
+- Updated `aws` provider
