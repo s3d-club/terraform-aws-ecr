@@ -1,8 +1,8 @@
 module "name" {
-  source = "github.com/s3d-club/terraform-external-name?ref=v0.1.11"
+  source = "github.com/s3d-club/terraform-external-name?ref=v0.1.14"
 
-  keepers = { kms_key_arn = var.kms_key_arn, v = "1" }
   context = var.name_prefix
+  keepers = { kms_key_arn = var.kms_key_arn, v = "1" }
   path    = path.module
   tags    = var.tags
 }

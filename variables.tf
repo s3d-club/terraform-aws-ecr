@@ -2,8 +2,7 @@ variable "kms_key_arn" {
   type = string
 
   description = <<-EOT
-    KMS Key
-    https://go.s3d.club/aws-ecr#kms_key
+    The ARN for a KMS key.
     EOT
 }
 
@@ -11,8 +10,7 @@ variable "name_prefix" {
   type = string
 
   description = <<-EOT
-    Name Prefix
-    https://go.s3d.club/aws-ecr#name_prefix
+    A prefix for the ECR name.
     EOT
 }
 
@@ -21,7 +19,6 @@ variable "tags" {
   type    = map(string)
 
   description = <<-EOT
-    Tags
-    https://go.s3d.club/aws-ecr#tags
+    Tags for resources.
     EOT
 }

@@ -13,3 +13,6 @@ Recently completed and planned work is tracked here.
 ## [0.1.14](.)
 - Updated `aws` provider
 - Updated `.terraform.lock.hcl` and `terraform.tf`
+
+## [0.1.15](.)
+- Improved descriptions of variables and outputs

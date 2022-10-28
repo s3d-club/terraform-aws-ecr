@@ -1,3 +1,4 @@
 output "aws_ecr_repository" {
-  value = aws_ecr_repository.this
+  description = "The AWS ECR repository."
+  value       = aws_ecr_repository.this
 }
