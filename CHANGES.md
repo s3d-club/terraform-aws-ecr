@@ -16,3 +16,6 @@ Recently completed and planned work is tracked here.
 
 ## [0.1.15](.)
 - Improved descriptions of variables and outputs
+
+## [0.1.16](.)
+- Changed to use `-x` as suffix for pre-release versions
