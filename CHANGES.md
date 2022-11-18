@@ -20,3 +20,6 @@ This file describes the project history as it relates to tagged versions.
 - Updated `external` provider
 - Updated `name` module
 - Updated `time` provider
+
+## [0.1.20](.)
+- Updated Terraform version
