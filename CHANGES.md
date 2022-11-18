@@ -23,3 +23,6 @@ This file describes the project history as it relates to tagged versions.
 
 ## [0.1.20](.)
 - Updated Terraform version
+
+## [0.1.21](.)
+- Updated `name` module
