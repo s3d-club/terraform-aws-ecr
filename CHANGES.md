@@ -12,5 +12,5 @@ This file describes the project history as it relates to tagged versions.
 - Removed `image_tag_mutability` so we will use the default of `MUTABLE`
 - Updated docs
 
-## [0.1.25](.)
+## [0.1.25](.) to [0.1.26](.)
 - Updated `aws` provider
