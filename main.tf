@@ -1,13 +1,24 @@
 module "name" {
-  source = "git::https://github.com/s3d-club/terraform-external-data-name-tags?ref=0.0.6"
+  source = "github.com/s3d-club/terraform-external-name?ref=v1.0.1"
 
-  name_prefix = var.name_prefix
-  path        = path.module
-  size        = 0
-  tags        = var.tags
+  context = var.name_prefix
+  keepers = { kms_key_arn = var.kms_key_arn, v = "1" }
+  path    = path.module
+  tags    = var.tags
 }
 
+# tfsec:ignore:aws-ecr-enforce-immutable-repository
 resource "aws_ecr_repository" "this" {
-  name = module.name.name_prefix
-  tags = module.name.tags
+  force_delete = true
+  name         = module.name.prefix
+  tags         = module.name.tags
+
+  encryption_configuration {
+    encryption_type = "KMS"
+    kms_key         = var.kms_key_arn
+  }
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
 }

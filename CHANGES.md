@@ -1,12 +1,5 @@
 # Changes
-Recently completed and planned work is tracked here.
+This file describes the project history as it relates to tagged versions.
 
-## [0.0.0](.)
-- Added project files
-
-## [0.0.1-1000](.)
-- Updated `README.md`
-- Added initial resources
-
-## [plan](.)
-- **TODO** Add code
+## [0.0.0](.) to [1.0.0](.)
+- Created the first release
